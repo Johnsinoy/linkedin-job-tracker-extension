@@ -7,8 +7,11 @@ Unlike other trackers, this extension respects your privacy by allowing you to h
 ## 🌟 Features
 
 * **⚡ Auto-Fill:** Automatically grabs Job Title, Company, and Location from the active LinkedIn tab.
+  <img width="1557" height="832" alt="image" src="https://github.com/user-attachments/assets/8cc5bfe6-487e-4a43-9f36-cef198979902" />
 * **🛠️ Manual Edit:** Review and edit details before saving.
+* <img width="474" height="509" alt="image" src="https://github.com/user-attachments/assets/d531d5db-8a2d-4710-9d1f-9e3ae5246a19" />
 * **📂 Own Your Data:** Connects to your personal Google Sheet (no external database).
+* <img width="468" height="270" alt="image" src="https://github.com/user-attachments/assets/296a0e62-85c1-40a5-a2e3-1c196426cb01" />
 * **⚙️ Configurable:** Paste your own Web App URL in the settings panel.
 
 ## 🚀 Installation Guide
@@ -17,7 +20,7 @@ Unlike other trackers, this extension respects your privacy by allowing you to h
 1.  Clone or download this repository.
 2.  Open Chrome and go to `chrome://extensions/`.
 3.  Toggle **Developer mode** (top right).
-4.  Click **Load unpacked**.
+4.  Click **Load unpacked** and choose the job-tracker-extension folder.
 5.  Select the folder containing these files.
 
 ---
