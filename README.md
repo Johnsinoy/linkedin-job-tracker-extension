@@ -1,6 +1,7 @@
 # 💼 LinkedIn Job Tracker Extension (BYO Sheet)
 
 A Chrome Extension that lets you scrape LinkedIn job postings and save them directly to your **own** Google Sheet. 
+<img width="1121" height="247" alt="image" src="https://github.com/user-attachments/assets/4426be0e-4e8e-486d-8863-a9de664ce2c4" />
 
 Unlike other trackers, this extension respects your privacy by allowing you to host your own data on your personal Google Drive.
 
