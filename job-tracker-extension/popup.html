@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { width: 320px; padding: 15px; font-family: 'Segoe UI', sans-serif; background: #f3f2ef; }
+      h3 { margin: 0 0 10px 0; color: #0a66c2; font-size: 16px; }
+      
+      .card { background: white; padding: 12px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 15px; }
+      label { font-size: 12px; font-weight: bold; color: #555; display: block; margin-bottom: 4px; }
+      input { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+      
+      /* Buttons */
+      button { width: 100%; padding: 10px; border: none; border-radius: 20px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+      .btn-search { background-color: #ffffff; border: 1px solid #0a66c2; color: #0a66c2; }
+      .btn-save { background-color: #0a66c2; color: white; }
+      .btn-save:hover { background-color: #004182; }
+      .btn-settings { background-color: #555; color: white; margin-top: 5px; font-size: 11px; padding: 6px; }
+
+      /* Utility */
+      #status { font-size: 12px; text-align: center; margin-top: 5px; }
+      .success { color: green; }
+      .error { color: red; }
+      .hidden { display: none; }
+      
+      /* Settings Area */
+      #settingsPanel { border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px; }
+      .info-text { font-size: 10px; color: #777; margin-bottom: 5px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="card">
+      <h3 style="display:flex; justify-content:space-between; align-items:center;">
+        Configuration
+        <button id="toggleSettings" style="width:auto; padding:2px 8px; font-size:10px;">Show</button>
+      </h3>
+      <div id="settingsPanel" class="hidden">
+        <label>Your Web App URL</label>
+        <p class="info-text">Paste the URL from your Apps Script deployment here.</p>
+        <input type="text" id="userWebAppUrl" placeholder="https://script.google.com/macros/s/...">
+        <button id="saveSettings" class="btn-settings">Save Configuration</button>
+        <div id="settingsStatus" class="success"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Search</h3>
+      <input type="text" id="searchKeyword" value="Junior Software Developer">
+      <input type="text" id="searchLocation" value="Canada">
+      <button id="btnSearch" class="btn-search">Open Search</button>
+    </div>
+
+    <div class="card">
+      <h3>Save Job</h3>
+      <div id="loadingMsg" style="font-size:11px; color:#0a66c2; display:none;">⚡ Auto-filling...</div>
+      
+      <label>Job Title</label>
+      <input type="text" id="jobTitle" placeholder="Job Title">
+      <label>Company</label>
+      <input type="text" id="company" placeholder="Company">
+      <label>Location</label>
+      <input type="text" id="jobLocation" placeholder="Location">
+      <label>Job Link</label>
+      <input type="text" id="jobUrl" style="background:#f0f0f0; color:#666;" readonly>
+      
+      <button id="btnSave" class="btn-save">Save to Sheet</button>
+      <div id="status"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
